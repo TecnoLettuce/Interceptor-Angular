@@ -1,2 +1,12 @@
-<h1> - Pruebas de Interceptor - </h1>
+<h1> - Pruebas de Interceptor {{tittle}}- </h1>
 <button type="button" (click)="onSubmit()">Click Me!</button>
+
+<h2>Pruebas de routing </h2>
+<div>
+  <nav>
+    <a routerLink="home" routerLinkActive="active"> Ir a la Home</a>
+    <a routerLink="about" routerLinkActive="active"> Ir al About</a>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

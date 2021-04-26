@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
+// Import para las pruebas de variables de entorno
+import { environment } from "../environments/environment";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,6 +16,7 @@ export class AppComponent {
   totalAngularpackages;
 
   // URL a la que hacemos la petición
+  tittle : string = environment.tittle
   url: string = "https://api.npms.io/v2/search?q=scope:angular"
   error;
 

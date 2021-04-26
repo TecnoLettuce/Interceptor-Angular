@@ -24,7 +24,7 @@ export class AuthInterceptorService implements HttpInterceptor {
     // Recogemos el token
 
 
-    // localStorage.setItem('token', 'tokenDePrueba') // Esta linea setea el token para incluirlo en el header, falseado claro
+    localStorage.setItem('token', 'tokenDePrueba') // Esta linea setea el token para incluirlo en el header, falseado claro
     const token: string = localStorage.getItem('token')
 
     // recogemos la request para mantenerla intacta, incluso si después le hacemos modificaciones.
